@@ -19,8 +19,8 @@ public final class Constants {
             }
 
             public static final class BackLeft {
-                public static final int turnMotor = 7;
-                public static final int driveMotor = 8;
+                public static final int turnMotor = 8;
+                public static final int driveMotor = 7;
                 public static final int CANcoder = 9;
             }
 

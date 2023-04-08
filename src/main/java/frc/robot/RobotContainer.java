@@ -13,7 +13,7 @@ import frc.robot.subsystems.DuckSwerveDrive;
 public class RobotContainer {
   private final CommandPS4Controller driverJoystick = new CommandPS4Controller(Constants.DriveControllerCharacteristics.port);
 
-  private final DuckSwerveDrive swerveSubsystem = new DuckSwerveDrive(
+  public final DuckSwerveDrive swerveSubsystem = new DuckSwerveDrive(
     Constants.SwerveDriveCharacteristics.chassisDimensionsMeters, Constants.SwerveDriveCharacteristics.ksAngularVolts,
     Constants.SwerveDriveCharacteristics.ksLinearVolts, Constants.SwerveDriveCharacteristics.kvLinearVoltMeters, Constants.SwerveDriveCharacteristics.kaLinearVoltMeters,
     Constants.CANIDS.SwerveModules.FrontLeft.turnMotor, Constants.CANIDS.SwerveModules.FrontLeft.driveMotor, Constants.CANIDS.SwerveModules.FrontLeft.CANcoder,
