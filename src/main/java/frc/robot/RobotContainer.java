@@ -16,7 +16,7 @@ public class RobotContainer {
   public final DuckSwerveDrive swerveSubsystem = new DuckSwerveDrive(
     Constants.SwerveDriveCharacteristics.chassisDimensionsMeters, Constants.SwerveDriveCharacteristics.ksAngularVolts,
     Constants.SwerveDriveCharacteristics.ksLinearVolts, Constants.SwerveDriveCharacteristics.kvLinearVoltMeters, Constants.SwerveDriveCharacteristics.kaLinearVoltMeters,
-    Constants.CANIDS.SwerveModules.FrontLeft.turnMotor, Constants.CANIDS.SwerveModules.FrontLeft.driveMotor, Constants.CANIDS.SwerveModules.FrontLeft.CANcoder,
+    Constants.CANIDS.SwerveModules.FrontLeft.turnMotor, Constants.CANIDS.SwerveModules.FrontLeft.driveMotor, Constants.CANIDS.SwerveModules.FrontLeft.absEncoderPwmChannel,
     Constants.CANIDS.SwerveModules.FrontRight.turnMotor, Constants.CANIDS.SwerveModules.FrontRight.driveMotor, Constants.CANIDS.SwerveModules.FrontRight.CANcoder,
     Constants.CANIDS.SwerveModules.BackLeft.turnMotor, Constants.CANIDS.SwerveModules.BackLeft.driveMotor, Constants.CANIDS.SwerveModules.BackLeft.CANcoder,
     Constants.CANIDS.SwerveModules.BackRight.turnMotor, Constants.CANIDS.SwerveModules.BackRight.driveMotor, Constants.CANIDS.SwerveModules.BackRight.CANcoder

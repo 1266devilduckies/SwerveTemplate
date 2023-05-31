@@ -36,10 +36,10 @@ public class DuckSwerveDrive extends SubsystemBase {
         );
         //calculate turnMinVoltage by seeing what is the minimum amount of voltage you need to apply to the turn motors to make the robot barely rotate
         //calculate the linear volt gains by having your turn motors be straight and then running a differential drive train test in sysid
-        m_FLModule = new DuckSwerveModule(flt, fld, turnMinVoltage, kSLinear, kVLinear, kALinear);
-        m_FRModule = new DuckSwerveModule(frt, frd, turnMinVoltage, kSLinear, kVLinear, kALinear);
-        m_BLModule = new DuckSwerveModule(blt, bld, turnMinVoltage, kSLinear, kVLinear, kALinear);
-        m_BRModule = new DuckSwerveModule(brt, brd, turnMinVoltage, kSLinear, kVLinear, kALinear);
+        m_FLModule = new DuckSwerveModule(flt, fld, flc, turnMinVoltage, kSLinear, kVLinear, kALinear);
+        m_FRModule = new DuckSwerveModule(frt, frd, frc, turnMinVoltage, kSLinear, kVLinear, kALinear);
+        m_BLModule = new DuckSwerveModule(blt, bld, blc, turnMinVoltage, kSLinear, kVLinear, kALinear);
+        m_BRModule = new DuckSwerveModule(brt, brd, brc, turnMinVoltage, kSLinear, kVLinear, kALinear);
 
         gyro = new DuckAHRS();
         m_odometry = new SwerveDriveOdometry(m_driveKinematics, Rotation2d.fromDegrees(-gyro.getAngle()), 

@@ -7,27 +7,27 @@ public final class Constants {
     public static final class CANIDS {
         public static final class SwerveModules {
             public static final class FrontLeft {
-                public static final int turnMotor = 1;
-                public static final int driveMotor = 2;
-                public static final int CANcoder = 3;
+                public static final int turnMotor = 69;
+                public static final int driveMotor = 69;
+                public static final int absEncoderPwmChannel = 0;
             }
 
             public static final class FrontRight {
-                public static final int turnMotor = 4;
-                public static final int driveMotor = 5;
-                public static final int CANcoder = 6;
+                public static final int turnMotor = 69;
+                public static final int driveMotor = 69;
+                public static final int CANcoder = 69;
             }
 
             public static final class BackLeft {
-                public static final int turnMotor = 8;
-                public static final int driveMotor = 7;
-                public static final int CANcoder = 9;
+                public static final int turnMotor = 69;
+                public static final int driveMotor = 69;
+                public static final int CANcoder = 69;
             }
 
             public static final class BackRight {
-                public static final int turnMotor = 10;
-                public static final int driveMotor = 11;
-                public static final int CANcoder = 12;
+                public static final int turnMotor = 69;
+                public static final int driveMotor = 69;
+                public static final int CANcoder = 69;
             }
         }
     }
